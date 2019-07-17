@@ -12,111 +12,151 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css" />
     <!-- Title -->
     <title>Cookie's Bakery</title>
   </head>
   <body>
-    <header id="header">
-      <!-- Navigation links -->
-      <nav class="navbar">
-        <ul>
-          <li><a href="#home-section" class="nav-links">Home</a></li>
-          <li><a href="#about-section" class="nav-links">About</a></li>
-          <li><a href="#gallery-section" class="nav-links">Gallery</a></li>
-          <li><a href="#contact-section" class="nav-links">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
     <main class="main">
+      <header id="header">
+        <!-- Navigation links -->
+        <nav id="nav-bar">
+          <img src="./images/donut.png" alt="A donut Logo" id="header-img" />
+          <h3 class="heading big-heading">
+            <a href="#home-section"> Cookie's Bakery</a>
+          </h3>
+          <ul>
+            <li><a href="#home-section" class="nav-link">Home</a></li>
+            <li><a href="#about-section" class="nav-link">About</a></li>
+            <li><a href="#gallery-section" class="nav-link">Gallery</a></li>
+            <li><a href="#contact-section" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
       <!-- Home Section -->
       <section id="home-section">
-        <h1 class="heading big-heading">Welcome To Cookie's Bakery</h1>
-        <p>
-          A Homemade Bakery shop in Cocord, NC
-        </p>
+        <div class="container">
+          <h1>Welcome To Cookie's Bakery</h1>
+          <p>
+            A Homemade Bakery shop in Cocord, NC
+          </p>
+        </div>
       </section>
       <!-- About Section -->
       <section id="about-section">
-        <h2 class="heading sub-heading">About Us</h2>
-        <p>
-          I originally started my business in New York because I always had a
-          passion in baking pastries. I created all kinds of cupcakes, cakes,
-          cookies, and more for parties, weddings, and events!
-        </p>
+        <div class="container">
+          <h1>About Us</h1>
+          <p>
+            I originally started my business in New York because I always had a
+            passion for baking pastries. I created all kinds of cupcakes, cakes,
+            cookies, and more for parties, weddings, and events!
+          </p>
+        </div>
       </section>
       <!-- Menu Section -->
       <section id="gallery-section">
-        <h2 class="heading sub-heading">Gallery</h2>
-        <p>Here are some of the pastries I made.</p>
-        <div class="wrapper">
-          <input checked type="radio" name="slider" id="slide1" />
-          <input type="radio" name="slider" id="slide2" />
-          <input type="radio" name="slider" id="slide3" />
+        <div class="container">
+          <h1>Gallery</h1>
+          <p>Here are some of the pastries I made.</p>
+          <div class="wrapper">
+            <input
+              class="radio-input"
+              checked
+              type="radio"
+              name="slider"
+              id="slide1"
+            />
+            <input class="radio-input" type="radio" name="slider" id="slide2" />
+            <input class="radio-input" type="radio" name="slider" id="slide3" />
 
-          <div class="slider-wrapper">
-            <div class="inner">
-              <article>
-                <img src="./images/cookie-cake.jpg" />
-              </article>
+            <div class="slider-wrapper">
+              <div class="inner">
+                <div class="img-div">
+                  <img
+                    src="./images/cookie-cake.jpg"
+                    alt="A cake called cookie's Cake"
+                  />
+                </div>
 
-              <article>
-                <img src="./images/decorated-cake.jpg" />
-              </article>
+                <div class="img-div">
+                  <img
+                    src="./images/decorated-cake.jpg"
+                    alt="A decorated Cake"
+                  />
+                </div>
 
-              <article>
-                <iframe
-                  width="560"
-                  src="https://www.youtube.com/embed/Ys1lZ5ia7RA"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-                <!-- <img src="./images/rose-cake.jpg" height="423" alt="" /> -->
-              </article>
+                <div class="img-div">
+                  <iframe
+                    width="560"
+                    src="https://www.youtube.com/embed/Ys1lZ5ia7RA"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                    id="video"
+                  ></iframe>
+                  <!-- <img src="./images/rose-cake.jpg" height="423" alt="" /> -->
+                </div>
+              </div>
+              <!-- .inner -->
             </div>
-            <!-- .inner -->
-          </div>
-          <!-- .slider-wrapper -->
+            <!-- .slider-wrapper -->
 
-          <div class="slider-prev-next-control">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
-          </div>
-          <!-- .slider-prev-next-control -->
+            <div class="slider-prev-next-control">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+            </div>
+            <!-- .slider-prev-next-control -->
 
-          <div class="slider-dot-control">
-            <label for="slide1"></label>
-            <label for="slide2"></label>
-            <label for="slide3"></label>
+            <div class="slider-dot-control">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
+            </div>
+            <!-- .slider-dot-control -->
           </div>
-          <!-- .slider-dot-control -->
         </div>
       </section>
       <!-- Contact Section -->
       <section id="contact-section">
-        <h2>Feel free to Contact!</h2>
-        <div id="social-media-links">
-          <a
-            href="https://www.facebook.com/profile.php?id=100005254488367"
-            target="_blank"
+        <h1>Feel Free to Send Requests!</h1>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="name" id="name-label" class="form-label">Name: </label>
+          <input
+            type="text"
+            name="name"
+            id="name-input"
+            placeholder="John Doe"
+          />
+          <label for="email" name="email" id="email-label" class="form-label"
+            >Email:</label
           >
-            <i class="fa fa-facebook-f"></i
-          ></a>
-          <a href="mailto:davidguzmaninc@gmail.com" target="_top">
-            <i class="fa fa-envelope"></i>
-          </a>
-          <a href="https://twitter.com/daveguz3197" target="_blank"
-            ><i class="fa fa-twitter"></i
-          ></a>
-        </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="johndoe@gmail.com"
+          />
+          <textarea
+            name="suggestions"
+            placeholder="Any Suggestions..."
+            id="textarea-input"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" value="Send" id="submit" />
+        </form>
+        <footer>
+          <p>&copy; 2019, Guz Web Media</p>
+        </footer>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2019, Guz Web Media</p>
-    </footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
   </body>
 </html>
